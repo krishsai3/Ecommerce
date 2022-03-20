@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ecom';
+  
+  constructor(){}
+  
+  ngOnInit(){}
+
+  url:string = "assets/images/iPhone12.jpeg";
+  changeImage(event:any){
+    this.url=event.target.src;
+  }
 }
+
